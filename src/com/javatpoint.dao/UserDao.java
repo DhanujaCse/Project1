@@ -10,7 +10,7 @@ public static Connection getConnection(){
     Connection con=null;  
     try{  
         Class.forName("com.mysql.jdbc.Driver");  
-        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/databasename","root","password");  
+        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/testingdb","root","password");  
     }catch(Exception e){System.out.println(e);}  
     return con;  
 }  
